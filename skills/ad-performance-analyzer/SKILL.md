@@ -20,11 +20,11 @@ Use this skill when ad metrics are available.
 - ad order share
 
 ## Diagnose patterns
-- high spend low conversion
-- high ctr low cvr
-- low ctr strong cvr
-- branded vs generic imbalance
-- budget inefficiency
+- **high spend low conversion** - review targeting
+- **high ctr low cvr** - check landing page
+- **low ctr strong cvr** - increase visibility
+- **branded vs generic imbalance** - review mix
+- **budget inefficiency** - optimize spend allocation
 
 ## Output
 Return:

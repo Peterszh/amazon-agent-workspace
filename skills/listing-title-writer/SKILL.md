@@ -21,7 +21,8 @@ Use this skill to draft title options.
 
 ## Output
 Provide:
-1. balanced version
-2. keyword-heavy version
-3. conversion-oriented version
+1. **balanced version** - search + readability
+2. **keyword-heavy version** - maximum coverage
+3. **conversion-oriented version** - buyer-focused
+
 With a short note for each.

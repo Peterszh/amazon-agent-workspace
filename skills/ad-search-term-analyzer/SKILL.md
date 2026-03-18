@@ -20,11 +20,11 @@ Use this skill on ad search term reports.
 - roas
 
 ## Group terms into:
-- high_click_high_conversion
-- high_click_low_conversion
-- low_click_high_conversion
-- costly_non_converting
-- irrelevant_or_low_match
+- **high_click_high_conversion** - keep, increase bid
+- **high_click_low_conversion** - optimize
+- **low_click_high_conversion** - increase visibility
+- **costly_non_converting** - negative or reduce bid
+- **irrelevant_or_low_match** - negative
 
 ## Output
 Return:

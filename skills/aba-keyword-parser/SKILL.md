@@ -13,12 +13,12 @@ Use this skill when the user provides ABA keyword data.
 - Identify words suitable for title, bullets, and backend terms
 
 ## Sort keywords into:
-- core
-- attribute
-- feature
-- scenario
-- long_tail
-- low_relevance_risk
+- **core** - main category words
+- **attribute** - color, material, size
+- **feature** - functional descriptions
+- **scenario** - use case terms
+- **long_tail** - high relevance, low competition
+- **low_relevance_risk** - high volume but poor fit
 
 ## Rules
 - Prefer relevance over raw traffic.
