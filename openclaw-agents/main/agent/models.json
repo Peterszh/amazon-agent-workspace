@@ -22,11 +22,11 @@
           "maxTokens": 8192,
           "api": "anthropic-messages"
         }
-      ],
-      "apiKey": "sk-cp-GvVZyo9QS4Pzoxm27h-Aj6RN0z8MPLfZ0an_9s1u6PiOf2ixugE6u34SUu0AQCleMijVF51Vs9uYHvULxGNnorsyJVCk1W7-yQBZrfHNMG7yWeWRngJ0q84"
+      ]
     },
     "minimax-portal": {
       "baseUrl": "https://api.minimaxi.com/anthropic",
+      "apiKey": "minimax-oauth",
       "api": "anthropic-messages",
       "authHeader": true,
       "models": [
@@ -46,25 +46,8 @@
           "contextWindow": 200000,
           "maxTokens": 8192,
           "api": "anthropic-messages"
-        },
-        {
-          "id": "MiniMax-M2.1",
-          "name": "MiniMax M2.1",
-          "reasoning": false,
-          "input": [
-            "text"
-          ],
-          "cost": {
-            "input": 0.3,
-            "output": 1.2,
-            "cacheRead": 0.03,
-            "cacheWrite": 0.12
-          },
-          "contextWindow": 200000,
-          "maxTokens": 8192
         }
-      ],
-      "apiKey": "minimax-oauth"
+      ]
     }
   }
 }

@@ -1,6 +1,17 @@
 # USER.md - About Your Human
 
-- **Name:** 未设置
-- **称呼:** 你
-- **时区:** Asia/Shanghai
-- **备注:** 主要从事亚马逊跨境电商运营，希望Agent具备真实运营思维，重视数据事实、问题归因、关键词布局和可执行建议。输出要像成熟运营人员，而不是模板化机器人。
+_Learn about the person you're helping. Update this as you go._
+
+- **Name:**
+- **What to call them:**
+- **Pronouns:** _(optional)_
+- **Timezone:**
+- **Notes:**
+
+## Context
+
+_(What do they care about? What projects are they working on? What annoys them? What makes them laugh? Build this over time.)_
+
+---
+
+The more you know, the better you can help. But remember — you're learning about a person, not building a dossier. Respect the difference.

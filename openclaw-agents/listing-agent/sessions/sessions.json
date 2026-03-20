@@ -1,31 +1,35 @@
 {
-  "agent:main:main": {
-    "sessionId": "65a7940f-0085-430a-9c1d-b45d28aa1ab1",
-    "updatedAt": 1774001635263,
+  "agent:listing-agent:feishu:group:oc_079730a36a1dfe815adfb24782ec6239": {
+    "sessionId": "bb79c35c-aa6d-4eca-9dc7-82ec9948e180",
+    "updatedAt": 1773995728484,
     "systemSent": true,
     "abortedLastRun": false,
-    "chatType": "direct",
+    "displayName": "feishu:g-oc_079730a36a1dfe815adfb24782ec6239",
+    "chatType": "group",
+    "channel": "feishu",
+    "groupId": "ou_1f9f28e3075a7203cdfad42628685242",
+    "subject": "oc_079730a36a1dfe815adfb24782ec6239",
     "deliveryContext": {
       "channel": "feishu",
-      "to": "user:ou_1f9f28e3075a7203cdfad42628685242",
+      "to": "chat:oc_079730a36a1dfe815adfb24782ec6239",
       "accountId": "default"
     },
     "lastChannel": "feishu",
-    "lastTo": "user:ou_1f9f28e3075a7203cdfad42628685242",
+    "lastTo": "chat:oc_079730a36a1dfe815adfb24782ec6239",
     "lastAccountId": "default",
     "origin": {
-      "label": "ou_1f9f28e3075a7203cdfad42628685242",
-      "provider": "feishu",
-      "surface": "feishu",
+      "label": "Qclaw",
+      "provider": "webchat",
+      "surface": "webchat",
       "chatType": "direct",
       "from": "feishu:ou_1f9f28e3075a7203cdfad42628685242",
-      "to": "user:ou_1f9f28e3075a7203cdfad42628685242",
+      "to": "chat:oc_079730a36a1dfe815adfb24782ec6239",
       "accountId": "default"
     },
-    "sessionFile": "/Users/mumian/.openclaw/agents/main/sessions/65a7940f-0085-430a-9c1d-b45d28aa1ab1.jsonl",
+    "sessionFile": "/Users/mumian/.openclaw/agents/listing-agent/sessions/bb79c35c-aa6d-4eca-9dc7-82ec9948e180.jsonl",
     "compactionCount": 0,
     "skillsSnapshot": {
-      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>~/.openclaw/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>~/.openclaw/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>~/.openclaw/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>~/.openclaw/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>apple-reminders</name>\n    <description>Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/apple-reminders/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bear-notes</name>\n    <description>Create, search, and manage Bear notes via grizzly CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/bear-notes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blucli</name>\n    <description>BluOS CLI (blu) for discovery, playback, grouping, and volume.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/blucli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>camsnap</name>\n    <description>Capture frames or clips from RTSP/ONVIF cameras.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/camsnap/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>eightctl</name>\n    <description>Control Eight Sleep pods (status, temperature, alarms, schedules).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/eightctl/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gifgrep</name>\n    <description>Search GIF providers with CLI/TUI, download results, and extract stills/sheets.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gifgrep/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>imsg</name>\n    <description>iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/imsg/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>model-usage</name>\n    <description>Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/model-usage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-banana-pro</name>\n    <description>Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-banana-pro/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openhue</name>\n    <description>Control Philips Hue lights and scenes via the OpenHue CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/openhue/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>oracle</name>\n    <description>Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/oracle/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ordercli</name>\n    <description>Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/ordercli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>peekaboo</name>\n    <description>Capture and automate macOS UI with the Peekaboo CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/peekaboo/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>songsee</name>\n    <description>Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/songsee/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>things-mac</name>\n    <description>Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/things-mac/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xurl</name>\n    <description>A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/xurl/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>aba-keyword-parser</name>\n    <description>ABA关键词解析器。负责读取ABA数据，解析关键词并提取核心指标。\n使用场景：\n(1) 用户上传ABA周报CSV并要求解析\n(2) 从飞书Bitable读取ABA数据\n(3) 需要提取关键词的排名、点击份额、转化份额\n(4) 初步标记异常词（高排名低点击、高排名低转化）\n(5) 标记词的类型：品牌词、泛词、长尾词、季节词\n注意：不做词位决策，只做数据解析和初步分类\n</description>\n    <location>~/.openclaw/skills/aba-keyword-parser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>keyword-refresh-planner</name>\n    <description>关键词更新规划器。制定季度/季节性关键词更新策略，管理词库生命周期。\n使用场景：\n(1) 季度性词库洗牌\n(2) 季节词更新（母亲节、万圣节、圣诞季）\n(3) 识别趋势词和替代词\n(4) 制定下次关键词优化计划\n(5) 哪些词该移出、哪些该进入\n</description>\n    <location>~/.openclaw/skills/keyword-refresh-planner/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>keyword-value-scorer</name>\n    <description>关键词价值评估器。判断关键词是否值得使用，以及关键词的战略定位。\n使用场景：\n(1) 给定一个或多个关键词，判断是否值得投广告\n(2) 判断关键词属于：核心词、潜力词、观察词、淘汰词\n(3) 分析词的价值类型：高流量低转化/高转化高价值/长尾补充词\n(4) 结合ABA点击份额和转化份额做综合判断\n注意：只做价值判断，不做词位分配\n</description>\n    <location>~/.openclaw/skills/keyword-value-scorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>listing-field-allocator</name>\n    <description>关键词词位分配器。将关键词分配到Listing的不同字段（标题、五点、Search Terms、描述）。\n使用场景：\n(1) 给定关键词，判断应该放在标题、五点还是ST\n(2) 优化现有Listing时，识别哪些词缺失\n(3) 批量分配词库中的词到不同字段\n(4) 检查标题/五点/ST的关键词覆盖情况\n注意：需要结合词的价值和竞争度做分配\n</description>\n    <location>~/.openclaw/skills/listing-field-allocator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>reddit</name>\n    <description>Read and search Reddit posts via web scraping of old.reddit.com. Use when Clawdbot needs to browse Reddit content - read posts from subreddits, search for topics, monitor specific communities. Read-only access with no posting or comments.</description>\n    <location>~/.openclaw/skills/openclaw-skills-reddit-scraper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>prompt-guard</name>\n    <description>650+ pattern AI agent security defense covering prompt injection, supply chain injection, memory poisoning, action gate bypass, unicode steganography, cascade amplification, multi-turn manipulation, authority escalation, PII/cloud credentials DLP, and code exfiltration. ClawSecurity-aligned patterns. Optional API for early-access and premium patterns. Tiered loading, hash cache, 12 SHIELD categories, 10 languages.</description>\n    <location>~/.openclaw/skills/prompt-guard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sqp-funnel-diagnoser</name>\n    <description>SQP漏斗诊断器。基于搜索-点击-加购-购买漏斗，诊断关键词和Listing问题。\n使用场景：\n(1) 高展示低点击问题 → 标题/主图/价格问题\n(2) 高点击低加购问题 → 五点/详情页问题\n(3) 高加购低购买问题 → 价格/评价/竞品问题\n(4) 判断哪些关键词对应哪类问题\n(5) 结合ABA数据诊断流量漏斗\n注意：需要广告数据或SQP数据支持\n</description>\n    <location>~/.openclaw/skills/sqp-funnel-diagnoser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>token-optimizer</name>\n    <description>Reduce OpenClaw AI costs by 97%. Haiku model routing, free Ollama heartbeats, prompt caching, and budget controls. Go from $1,500/month to $50/month in 5 minutes.</description>\n    <location>~/.openclaw/skills/token-optimizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>reddit-readonly</name>\n    <description>Browse and search Reddit in read-only mode using public JSON endpoints. Use when the user asks to browse subreddits, search for posts by topic, inspect comment threads, or build a shortlist of links to review and reply to manually.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/reddit-readonly/SKILL.md</location>\n  </skill>\n</available_skills>",
+      "prompt": "\n\nThe following skills provide specialized instructions for specific tasks.\nUse the read tool to load a skill's file when the task matches its description.\nWhen a skill file references a relative path, resolve it against the skill directory (parent of SKILL.md / dirname of the path) and use that absolute path in tool commands.\n\n<available_skills>\n  <skill>\n    <name>feishu-doc</name>\n    <description>Feishu document read/write operations. Activate when user mentions Feishu docs, cloud docs, or docx links.\n</description>\n    <location>~/.openclaw/skills/feishu-doc/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-drive</name>\n    <description>Feishu cloud storage file management. Activate when user mentions cloud space, folders, drive.\n</description>\n    <location>~/.openclaw/skills/feishu-drive/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-perm</name>\n    <description>Feishu permission management for documents and files. Activate when user mentions sharing, permissions, collaborators.\n</description>\n    <location>~/.openclaw/skills/feishu-perm/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>feishu-wiki</name>\n    <description>Feishu knowledge base navigation. Activate when user mentions knowledge base, wiki, or wiki links.\n</description>\n    <location>~/.openclaw/skills/feishu-wiki/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>apple-reminders</name>\n    <description>Manage Apple Reminders via remindctl CLI (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/apple-reminders/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bear-notes</name>\n    <description>Create, search, and manage Bear notes via grizzly CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/bear-notes/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blogwatcher</name>\n    <description>Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/blogwatcher/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>blucli</name>\n    <description>BluOS CLI (blu) for discovery, playback, grouping, and volume.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/blucli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>camsnap</name>\n    <description>Capture frames or clips from RTSP/ONVIF cameras.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/camsnap/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>clawhub</name>\n    <description>Use the ClawHub CLI to search, install, update, and publish agent skills from clawhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawhub CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/clawhub/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>eightctl</name>\n    <description>Control Eight Sleep pods (status, temperature, alarms, schedules).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/eightctl/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gemini</name>\n    <description>Gemini CLI for one-shot Q&amp;A, summaries, and generation.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gemini/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gh-issues</name>\n    <description>Fetch GitHub issues, spawn sub-agents to implement fixes and open PRs, then monitor and address PR review comments. Usage: /gh-issues [owner/repo] [--label bug] [--limit 5] [--milestone v1.0] [--assignee @me] [--fork user/repo] [--watch] [--interval 5] [--reviews-only] [--cron] [--dry-run] [--model glm-5] [--notify-channel -1002381931352]</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gh-issues/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gifgrep</name>\n    <description>Search GIF providers with CLI/TUI, download results, and extract stills/sheets.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gifgrep/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>github</name>\n    <description>GitHub operations via `gh` CLI: issues, PRs, CI runs, code review, API queries. Use when: (1) checking PR status or CI, (2) creating/commenting on issues, (3) listing/filtering PRs or issues, (4) viewing run logs. NOT for: complex web UI interactions requiring manual browser flows (use browser tooling when available), bulk operations across many repos (script with gh api), or when gh auth is not configured.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/github/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>gog</name>\n    <description>Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/gog/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>healthcheck</name>\n    <description>Host security hardening and risk-tolerance configuration for OpenClaw deployments. Use when a user asks for security audits, firewall/SSH/update hardening, risk posture, exposure review, OpenClaw cron scheduling for periodic checks, or version status checks on a machine running OpenClaw (laptop, workstation, Pi, VPS).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/healthcheck/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>himalaya</name>\n    <description>CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/himalaya/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>imsg</name>\n    <description>iMessage/SMS CLI for listing chats, history, and sending messages via Messages.app.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/imsg/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>mcporter</name>\n    <description>Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/mcporter/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>model-usage</name>\n    <description>Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/model-usage/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>nano-pdf</name>\n    <description>Edit PDFs with natural-language instructions using the nano-pdf CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-pdf/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>obsidian</name>\n    <description>Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/obsidian/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>openhue</name>\n    <description>Control Philips Hue lights and scenes via the OpenHue CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/openhue/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>oracle</name>\n    <description>Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/oracle/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ordercli</name>\n    <description>Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/ordercli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>peekaboo</name>\n    <description>Capture and automate macOS UI with the Peekaboo CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/peekaboo/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>skill-creator</name>\n    <description>Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/skill-creator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>songsee</name>\n    <description>Generate spectrograms and feature-panel visualizations from audio with the songsee CLI.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/songsee/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sonoscli</name>\n    <description>Control Sonos speakers (discover/status/play/volume/group).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/sonoscli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>summarize</name>\n    <description>Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/summarize/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>things-mac</name>\n    <description>Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks OpenClaw to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/things-mac/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>video-frames</name>\n    <description>Extract frames or short clips from videos using ffmpeg.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/video-frames/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>wacli</name>\n    <description>Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats).</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/wacli/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>weather</name>\n    <description>Get current weather and forecasts via wttr.in or Open-Meteo. Use when: user asks about weather, temperature, or forecasts for any location. NOT for: historical weather data, severe weather alerts, or detailed meteorological analysis. No API key needed.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/weather/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>xurl</name>\n    <description>A CLI tool for making authenticated requests to the X (Twitter) API. Use this skill when you need to post tweets, reply, quote, search, read posts, manage followers, send DMs, upload media, or interact with any X API v2 endpoint.</description>\n    <location>/Applications/Qclaw.app/Contents/Resources/openclaw/skills/xurl/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>aba-keyword-parser</name>\n    <description>Parse Amazon ABA keyword data and identify high-value relevant keywords.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/aba-keyword-parser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>keyword-refresh-planner</name>\n    <description>关键词更新规划器。制定季度/季节性关键词更新策略，管理词库生命周期。\n使用场景：\n(1) 季度性词库洗牌\n(2) 季节词更新（母亲节、万圣节、圣诞季）\n(3) 识别趋势词和替代词\n(4) 制定下次关键词优化计划\n(5) 哪些词该移出、哪些该进入\n</description>\n    <location>~/.openclaw/skills/keyword-refresh-planner/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>keyword-value-scorer</name>\n    <description>关键词价值评估器。判断关键词是否值得使用，以及关键词的战略定位。\n使用场景：\n(1) 给定一个或多个关键词，判断是否值得投广告\n(2) 判断关键词属于：核心词、潜力词、观察词、淘汰词\n(3) 分析词的价值类型：高流量低转化/高转化高价值/长尾补充词\n(4) 结合ABA点击份额和转化份额做综合判断\n注意：只做价值判断，不做词位分配\n</description>\n    <location>~/.openclaw/skills/keyword-value-scorer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>listing-field-allocator</name>\n    <description>关键词词位分配器。将关键词分配到Listing的不同字段（标题、五点、Search Terms、描述）。\n使用场景：\n(1) 给定关键词，判断应该放在标题、五点还是ST\n(2) 优化现有Listing时，识别哪些词缺失\n(3) 批量分配词库中的词到不同字段\n(4) 检查标题/五点/ST的关键词覆盖情况\n注意：需要结合词的价值和竞争度做分配\n</description>\n    <location>~/.openclaw/skills/listing-field-allocator/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>reddit</name>\n    <description>Read and search Reddit posts via web scraping of old.reddit.com. Use when Clawdbot needs to browse Reddit content - read posts from subreddits, search for topics, monitor specific communities. Read-only access with no posting or comments.</description>\n    <location>~/.openclaw/skills/openclaw-skills-reddit-scraper/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>prompt-guard</name>\n    <description>650+ pattern AI agent security defense covering prompt injection, supply chain injection, memory poisoning, action gate bypass, unicode steganography, cascade amplification, multi-turn manipulation, authority escalation, PII/cloud credentials DLP, and code exfiltration. ClawSecurity-aligned patterns. Optional API for early-access and premium patterns. Tiered loading, hash cache, 12 SHIELD categories, 10 languages.</description>\n    <location>~/.openclaw/skills/prompt-guard/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>sqp-funnel-diagnoser</name>\n    <description>SQP漏斗诊断器。基于搜索-点击-加购-购买漏斗，诊断关键词和Listing问题。\n使用场景：\n(1) 高展示低点击问题 → 标题/主图/价格问题\n(2) 高点击低加购问题 → 五点/详情页问题\n(3) 高加购低购买问题 → 价格/评价/竞品问题\n(4) 判断哪些关键词对应哪类问题\n(5) 结合ABA数据诊断流量漏斗\n注意：需要广告数据或SQP数据支持\n</description>\n    <location>~/.openclaw/skills/sqp-funnel-diagnoser/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>token-optimizer</name>\n    <description>Reduce OpenClaw AI costs by 97%. Haiku model routing, free Ollama heartbeats, prompt caching, and budget controls. Go from $1,500/month to $50/month in 5 minutes.</description>\n    <location>~/.openclaw/skills/token-optimizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ad-performance-analyzer</name>\n    <description>Diagnose Amazon advertising performance and surface actionable optimization directions.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/ad-performance-analyzer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>ad-search-term-analyzer</name>\n    <description>Analyze Amazon ad search term performance for keyword harvesting and filtering.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/ad-search-term-analyzer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>amazon-data-reader</name>\n    <description>Interpret Amazon operational datasets including sales, traffic, conversion, and ads snapshots.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/amazon-data-reader/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>bullet-point-writer</name>\n    <description>Write Amazon bullet points that combine conversion logic and keyword placement.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/bullet-point-writer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>intent-classifier</name>\n    <description>Classify Amazon ecommerce requests into listing, keyword, ops, promotion, hybrid, or missing-info categories.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/intent-classifier/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>inventory-risk-checker</name>\n    <description>Detect Amazon inventory and replenishment risks from ERP and sales trend data.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/inventory-risk-checker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>keyword-library-builder</name>\n    <description>Build a structured Amazon keyword library from ABA and ad data.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/keyword-library-builder/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>lingxing-erp-reader</name>\n    <description>Interpret Lingxing ERP data for cost, inventory, and profit context.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/lingxing-erp-reader/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>listing-compliance-checker</name>\n    <description>Check Amazon listing copy for readability, redundancy, and risky wording.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/listing-compliance-checker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>listing-title-writer</name>\n    <description>Write Amazon-compliant product titles based on keyword priorities and product attributes.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/listing-title-writer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>missing-info-checker</name>\n    <description>Detect missing required fields for Amazon listing or operations tasks.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/missing-info-checker/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>multi-agent-synthesizer</name>\n    <description>Merge outputs from listing and operations agents into one final decision-ready answer.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/multi-agent-synthesizer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>operation-strategy-planner</name>\n    <description>Build a practical short-term and medium-term Amazon growth plan from diagnosis results.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/operation-strategy-planner/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>product-description-writer</name>\n    <description>Write Amazon product descriptions with clear value communication and compliant wording.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/product-description-writer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>profit-analyzer</name>\n    <description>Analyze gross and net profit changes using Amazon and ERP data.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/profit-analyzer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>search-terms-writer</name>\n    <description>Suggest backend search terms for Amazon listings based on uncovered relevant keywords.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/search-terms-writer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>task-router</name>\n    <description>Route Amazon ecommerce tasks to the correct child agent based on task type.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/task-router/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>traffic-conversion-analyzer</name>\n    <description>Diagnose Amazon traffic and conversion changes and separate volume issues from page issues.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/traffic-conversion-analyzer/SKILL.md</location>\n  </skill>\n  <skill>\n    <name>trend-analyzer</name>\n    <description>Compare Amazon business performance across recent periods such as 7, 14, and 30 days.</description>\n    <location>~/.openclaw/workspace/amazon-agent-workspace/skills/trend-analyzer/SKILL.md</location>\n  </skill>\n</available_skills>",
       "skills": [
         {
           "name": "feishu-doc"
@@ -106,13 +110,6 @@
         {
           "name": "model-usage",
           "requiredEnv": []
-        },
-        {
-          "name": "nano-banana-pro",
-          "primaryEnv": "GEMINI_API_KEY",
-          "requiredEnv": [
-            "GEMINI_API_KEY"
-          ]
         },
         {
           "name": "nano-pdf",
@@ -198,7 +195,61 @@
           "name": "token-optimizer"
         },
         {
-          "name": "reddit-readonly"
+          "name": "ad-performance-analyzer"
+        },
+        {
+          "name": "ad-search-term-analyzer"
+        },
+        {
+          "name": "amazon-data-reader"
+        },
+        {
+          "name": "bullet-point-writer"
+        },
+        {
+          "name": "intent-classifier"
+        },
+        {
+          "name": "inventory-risk-checker"
+        },
+        {
+          "name": "keyword-library-builder"
+        },
+        {
+          "name": "lingxing-erp-reader"
+        },
+        {
+          "name": "listing-compliance-checker"
+        },
+        {
+          "name": "listing-title-writer"
+        },
+        {
+          "name": "missing-info-checker"
+        },
+        {
+          "name": "multi-agent-synthesizer"
+        },
+        {
+          "name": "operation-strategy-planner"
+        },
+        {
+          "name": "product-description-writer"
+        },
+        {
+          "name": "profit-analyzer"
+        },
+        {
+          "name": "search-terms-writer"
+        },
+        {
+          "name": "task-router"
+        },
+        {
+          "name": "traffic-conversion-analyzer"
+        },
+        {
+          "name": "trend-analyzer"
         }
       ],
       "resolvedSkills": [
@@ -371,14 +422,6 @@
           "disableModelInvocation": false
         },
         {
-          "name": "nano-banana-pro",
-          "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
-          "filePath": "/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-banana-pro/SKILL.md",
-          "baseDir": "/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-banana-pro",
-          "source": "openclaw-bundled",
-          "disableModelInvocation": false
-        },
-        {
           "name": "nano-pdf",
           "description": "Edit PDFs with natural-language instructions using the nano-pdf CLI.",
           "filePath": "/Applications/Qclaw.app/Contents/Resources/openclaw/skills/nano-pdf/SKILL.md",
@@ -500,10 +543,10 @@
         },
         {
           "name": "aba-keyword-parser",
-          "description": "ABA关键词解析器。负责读取ABA数据，解析关键词并提取核心指标。\n使用场景：\n(1) 用户上传ABA周报CSV并要求解析\n(2) 从飞书Bitable读取ABA数据\n(3) 需要提取关键词的排名、点击份额、转化份额\n(4) 初步标记异常词（高排名低点击、高排名低转化）\n(5) 标记词的类型：品牌词、泛词、长尾词、季节词\n注意：不做词位决策，只做数据解析和初步分类\n",
-          "filePath": "/Users/mumian/.openclaw/skills/aba-keyword-parser/SKILL.md",
-          "baseDir": "/Users/mumian/.openclaw/skills/aba-keyword-parser",
-          "source": "openclaw-managed",
+          "description": "Parse Amazon ABA keyword data and identify high-value relevant keywords.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/aba-keyword-parser/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/aba-keyword-parser",
+          "source": "openclaw-workspace",
           "disableModelInvocation": false
         },
         {
@@ -563,10 +606,154 @@
           "disableModelInvocation": false
         },
         {
-          "name": "reddit-readonly",
-          "description": "Browse and search Reddit in read-only mode using public JSON endpoints. Use when the user asks to browse subreddits, search for posts by topic, inspect comment threads, or build a shortlist of links to review and reply to manually.",
-          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/reddit-readonly/SKILL.md",
-          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/reddit-readonly",
+          "name": "ad-performance-analyzer",
+          "description": "Diagnose Amazon advertising performance and surface actionable optimization directions.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/ad-performance-analyzer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/ad-performance-analyzer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "ad-search-term-analyzer",
+          "description": "Analyze Amazon ad search term performance for keyword harvesting and filtering.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/ad-search-term-analyzer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/ad-search-term-analyzer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "amazon-data-reader",
+          "description": "Interpret Amazon operational datasets including sales, traffic, conversion, and ads snapshots.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/amazon-data-reader/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/amazon-data-reader",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "bullet-point-writer",
+          "description": "Write Amazon bullet points that combine conversion logic and keyword placement.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/bullet-point-writer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/bullet-point-writer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "intent-classifier",
+          "description": "Classify Amazon ecommerce requests into listing, keyword, ops, promotion, hybrid, or missing-info categories.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/intent-classifier/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/intent-classifier",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "inventory-risk-checker",
+          "description": "Detect Amazon inventory and replenishment risks from ERP and sales trend data.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/inventory-risk-checker/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/inventory-risk-checker",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "keyword-library-builder",
+          "description": "Build a structured Amazon keyword library from ABA and ad data.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/keyword-library-builder/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/keyword-library-builder",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "lingxing-erp-reader",
+          "description": "Interpret Lingxing ERP data for cost, inventory, and profit context.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/lingxing-erp-reader/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/lingxing-erp-reader",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "listing-compliance-checker",
+          "description": "Check Amazon listing copy for readability, redundancy, and risky wording.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/listing-compliance-checker/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/listing-compliance-checker",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "listing-title-writer",
+          "description": "Write Amazon-compliant product titles based on keyword priorities and product attributes.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/listing-title-writer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/listing-title-writer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "missing-info-checker",
+          "description": "Detect missing required fields for Amazon listing or operations tasks.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/missing-info-checker/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/missing-info-checker",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "multi-agent-synthesizer",
+          "description": "Merge outputs from listing and operations agents into one final decision-ready answer.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/multi-agent-synthesizer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/multi-agent-synthesizer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "operation-strategy-planner",
+          "description": "Build a practical short-term and medium-term Amazon growth plan from diagnosis results.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/operation-strategy-planner/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/operation-strategy-planner",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "product-description-writer",
+          "description": "Write Amazon product descriptions with clear value communication and compliant wording.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/product-description-writer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/product-description-writer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "profit-analyzer",
+          "description": "Analyze gross and net profit changes using Amazon and ERP data.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/profit-analyzer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/profit-analyzer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "search-terms-writer",
+          "description": "Suggest backend search terms for Amazon listings based on uncovered relevant keywords.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/search-terms-writer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/search-terms-writer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "task-router",
+          "description": "Route Amazon ecommerce tasks to the correct child agent based on task type.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/task-router/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/task-router",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "traffic-conversion-analyzer",
+          "description": "Diagnose Amazon traffic and conversion changes and separate volume issues from page issues.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/traffic-conversion-analyzer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/traffic-conversion-analyzer",
+          "source": "openclaw-workspace",
+          "disableModelInvocation": false
+        },
+        {
+          "name": "trend-analyzer",
+          "description": "Compare Amazon business performance across recent periods such as 7, 14, and 30 days.",
+          "filePath": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/trend-analyzer/SKILL.md",
+          "baseDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace/skills/trend-analyzer",
           "source": "openclaw-workspace",
           "disableModelInvocation": false
         }
@@ -578,9 +765,9 @@
     "contextTokens": 1048576,
     "systemPromptReport": {
       "source": "run",
-      "generatedAt": 1774001513323,
-      "sessionId": "65a7940f-0085-430a-9c1d-b45d28aa1ab1",
-      "sessionKey": "agent:main:main",
+      "generatedAt": 1773995693029,
+      "sessionId": "bb79c35c-aa6d-4eca-9dc7-82ec9948e180",
+      "sessionKey": "agent:listing-agent:feishu:group:oc_079730a36a1dfe815adfb24782ec6239",
       "provider": "google",
       "model": "gemini-2.5-flash",
       "workspaceDir": "/Users/mumian/.openclaw/workspace/amazon-agent-workspace",
@@ -591,9 +778,9 @@
         "sandboxed": false
       },
       "systemPrompt": {
-        "chars": 42089,
+        "chars": 46237,
         "projectContextChars": 14595,
-        "nonProjectContextChars": 27494
+        "nonProjectContextChars": 31642
       },
       "injectedWorkspaceFiles": [
         {
@@ -654,7 +841,7 @@
         }
       ],
       "skills": {
-        "promptChars": 15287,
+        "promptChars": 19862,
         "entries": [
           {
             "name": "feishu-doc",
@@ -741,10 +928,6 @@
             "blockChars": 475
           },
           {
-            "name": "nano-banana-pro",
-            "blockChars": 257
-          },
-          {
             "name": "nano-pdf",
             "blockChars": 246
           },
@@ -806,7 +989,7 @@
           },
           {
             "name": "aba-keyword-parser",
-            "blockChars": 342
+            "blockChars": 263
           },
           {
             "name": "keyword-refresh-planner",
@@ -837,8 +1020,80 @@
             "blockChars": 314
           },
           {
-            "name": "reddit-readonly",
-            "blockChars": 416
+            "name": "ad-performance-analyzer",
+            "blockChars": 288
+          },
+          {
+            "name": "ad-search-term-analyzer",
+            "blockChars": 280
+          },
+          {
+            "name": "amazon-data-reader",
+            "blockChars": 285
+          },
+          {
+            "name": "bullet-point-writer",
+            "blockChars": 272
+          },
+          {
+            "name": "intent-classifier",
+            "blockChars": 298
+          },
+          {
+            "name": "inventory-risk-checker",
+            "blockChars": 277
+          },
+          {
+            "name": "keyword-library-builder",
+            "blockChars": 264
+          },
+          {
+            "name": "lingxing-erp-reader",
+            "blockChars": 261
+          },
+          {
+            "name": "listing-compliance-checker",
+            "blockChars": 280
+          },
+          {
+            "name": "listing-title-writer",
+            "blockChars": 284
+          },
+          {
+            "name": "missing-info-checker",
+            "blockChars": 265
+          },
+          {
+            "name": "multi-agent-synthesizer",
+            "blockChars": 287
+          },
+          {
+            "name": "operation-strategy-planner",
+            "blockChars": 294
+          },
+          {
+            "name": "product-description-writer",
+            "blockChars": 294
+          },
+          {
+            "name": "profit-analyzer",
+            "blockChars": 248
+          },
+          {
+            "name": "search-terms-writer",
+            "blockChars": 279
+          },
+          {
+            "name": "task-router",
+            "blockChars": 252
+          },
+          {
+            "name": "traffic-conversion-analyzer",
+            "blockChars": 300
+          },
+          {
+            "name": "trend-analyzer",
+            "blockChars": 268
           }
         ]
       },
@@ -1053,11 +1308,14 @@
         ]
       }
     },
-    "inputTokens": 108525,
-    "outputTokens": 142,
-    "cacheRead": 97687,
+    "inputTokens": 318770,
+    "outputTokens": 1975,
+    "cacheRead": 42880,
     "cacheWrite": 0,
+    "totalTokens": 88700,
     "totalTokensFresh": true,
-    "totalTokens": 206212
+    "authProfileOverride": "google:default",
+    "authProfileOverrideSource": "auto",
+    "authProfileOverrideCompactionCount": 0
   }
 }
